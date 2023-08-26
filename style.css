@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    border: solid 1px;
+    width: 50vh;
+    min-height: 510px;
+    background-color: rgb(236, 194, 139);
+    position: relative;
+    transform: translateY(50px);
+}
+.screen{
+    width: 100%;
+    height: 78.5px;
+    margin: 10px 0;
+    font-size: 60px;
+    text-align: right;
+}
+.btnContainer{
+    width: 70%;
+    
+    position: relative;
+    display: block;
+}
+.btnContainer>button{
+   width: 80px;
+   height: 96px;
+   margin: 2px auto;
+   left: 3px;
+   position: relative;
+   font-size: xx-large;
+   color: blue;
+   cursor: pointer;
+}
+.btnContainer>button:last-child{
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    z-index: 5;
+}
+
+.operatorContainer{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    width: 30%;
+    height: 80%;
+    top: 100px;
+
+}
+.operatorContainer>button{
+    height: 70px;
+    font-size: 50px;
+    color: rgb(88, 88, 88);
+    cursor: pointer;
+    position: relative;
+    margin: 5px;
+    top: -3px;
+}
+.resultContainer{
+    display: flex;
+    justify-content: space-between;
+    height: 121px;
+    width: 70%;
+    position: absolute;
+    bottom: 0;
+}
+.resultContainer>button{
+    width: 30%;
+    height: 79%;
+    margin: 6px;
+    position: relative;
+    top: 8px;
+    cursor: pointer;
+}
+
+
