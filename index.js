@@ -33,6 +33,14 @@ btn.forEach(item=>{
      if( screen.value.includes("+") || screen.value.includes("-") || screen.value.includes("x") || screen.value.includes("/")){
             rightSide += Element.innerHTML
         }
+
+     if(screen.value.length>10){
+            screen.style.fontSize="40px";
+        }
+    else{
+            screen.style.fontSize="60px";
+        }
+    
     })
 })
 // addEvent
@@ -116,6 +124,12 @@ function DLT(){
         benchmark=true
      }
 }
+    if(screen.value.length>10){
+    screen.style.fontSize="40px";
+     }
+    else{
+    screen.style.fontSize="60px";
+     }
 }
 //function delete 
 
